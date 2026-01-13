@@ -69,16 +69,16 @@ Här ska vi bevisa skillnaden på _Pass-by-Value_ och _Pass-by-Reference_. Detta
 
 Nu knyter vi ihop objekt, arrayer och funktioner.
 
-- [ ] Skapa en lista (Array) med objekt som simulerar en varukorg. Varje objekt i listan ska ha:
+- [x] Skapa en lista (Array) med objekt som simulerar en varukorg. Varje objekt i listan ska ha:
   - `name` (string)
   - `price` (number)
-- [ ] Skapa en funktion `calculateTotal`.
+- [x] Skapa en funktion `calculateTotal`.
   - Den ska ta emot varukorgen som parameter.
   - Den ska loopa igenom listan och returnera totalsumman.
-- [ ] Skapa en funktion `addProduct`.
+- [x] Skapa en funktion `addProduct`.
   - Den ska ta emot varukorgen och en **ny** produkt (ett objekt med namn och pris).
   - Den ska lägga till (`push`) den nya produkten i listan.
-- [ ] **Simulera ett köp:**
+- [x] **Simulera ett köp:**
   1.  Logga totalen (bör vara t.ex. 0 eller vad du startade med).
   2.  Anropa `addProduct` för att lägga till en "Kaffe" för 40kr.
   3.  Logga totalen igen för att se att den ökat.
