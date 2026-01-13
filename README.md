@@ -1,10 +1,10 @@
 # Workshop: Funktioner, Logik & Referense
 
-## Steg 1: Syntax-omvandlingen (Gammalt till Nytt)
+## Steg 1: Syntax-omvandlingen (Oldschool till Modern)
 Vi börjar med att öva på den moderna syntaxen som är standard idag.
 
-- [ ] Skriv en **gammaldags** namngiven funktion (med nyckelordet `function`) som heter `calculateArea`. Den ska ta `width` och `height` (numbers) och returnera arean.
-- [ ] Skriv sedan **om** exakt samma funktion till en modern **Arrow Function** (`const calculateArea = ...`) under den gamla.
+- [ ] Skriv en namngiven funktion (med nyckelordet `function`) som heter `calculateArea`. Den ska ta `width` och `height` (numbers) och returnera arean.
+- [ ] Skriv sedan **om** exakt samma funktion till en modern **Arrow Function** (`const calculateArea = ...`) under den namngivna funktionen.
 - [ ] **Utmaning:** Prova att göra Arrow-funktionen så kort som möjligt. Kan du skriva den på en enda rad med **Implicit Return**? (Utan måsvingar `{ }` och `return`).
 - [ ] Anropa funktionen, spara svaret i en variabel och logga det i konsolen.
 
