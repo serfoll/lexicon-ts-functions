@@ -35,6 +35,12 @@ console.log(`Med namn, egen hälsning o skrik: ${greet3}`);
 
 // Steg 3: Detektiven (Type Guards)
 
+const countStrings = (input: string | string[]): number =>
+  Array.isArray(input) ? input.length : 1;
+
+console.log(countStrings(["Äpple", "Banan"]));
+console.log(countStrings("Howdy"));
+
 // Steg 4: Minnes-experiment (Object vs Primitiver)
 
 // Steg 5: Slutuppgift - "Varukorgen"

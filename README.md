@@ -35,15 +35,15 @@ Här ska vi bygga en funktion som är "snäll" mot användaren genom att ha valf
 
 Nu ska vi öva på att hantera data som kan vara av olika typer, precis som i ett API-svar.
 
-- [ ] Skapa en funktion som heter `countStrings`.
-- [ ] Den ska ta emot **en** parameter som heter `input`.
-- [ ] Typen på input ska vara en **Union Type**: `string | string[]` (alltså _antingen_ en sträng _eller_ en lista av strängar).
-- [ ] **Logiken:**
+- [x] Skapa en funktion som heter `countStrings`.
+- [x] Den ska ta emot **en** parameter som heter `input`.
+- [x] Typen på input ska vara en **Union Type**: `string | string[]` (alltså _antingen_ en sträng _eller_ en lista av strängar).
+- [x] **Logiken:**
   - Använd `Array.isArray(input)` för att kolla vad det är för data.
   - Om det är en **Array**: Returnera antalet ord i listan (längden).
   - Om det är en **Sträng**: Returnera siffran `1`.
-- [ ] Testa att anropa med `["Äpple", "Banan"]` (Borde bli 2).
-- [ ] Testa att anropa med `"Ensam sträng"` (Borde bli 1).
+- [x] Testa att anropa med `["Äpple", "Banan"]` (Borde bli 2).
+- [x] Testa att anropa med `"Ensam sträng"` (Borde bli 1).
 
 > 💡 **Tips:** VS Code kommer hjälpa dig inuti if-satsen. När du vet att det är en array kan du använda array-metoder!
 
