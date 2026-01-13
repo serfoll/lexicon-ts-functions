@@ -1,0 +1,23 @@
+{
+  "name": "lexicon-ts-functions",
+  "version": "1.0.0",
+  "description": "Vi börjar med att öva på den moderna syntaxen som är standard idag.",
+  "main": "index.js",
+  "scripts": {
+    "ts": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serfoll/lexicon-ts-functions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serfoll/lexicon-ts-functions/issues"
+  },
+  "homepage": "https://github.com/serfoll/lexicon-ts-functions#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
