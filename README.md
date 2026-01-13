@@ -15,16 +15,16 @@ Vi börjar med att öva på den moderna syntaxen som är standard idag.
 
 Här ska vi bygga en funktion som är "snäll" mot användaren genom att ha valfria inställningar.
 
-- [ ] Skapa en funktion som heter `greetUser`.
-- [ ] Den ska ta tre parametrar:
+- [x] Skapa en funktion som heter `greetUser`.
+- [x] Den ska ta tre parametrar:
   1.  `name` (string, obligatorisk).
   2.  `greeting` (string). Denna ska ha ett **Default Value** satt till `"Hej"`.
   3.  `isShouting` (boolean). Denna ska vara **Optional** (`?`).
-- [ ] **Logiken:**
+- [x] **Logiken:**
   - Funktionen ska returnera en sträng.
   - Om `isShouting` är sant, returnera hela meningen med STORA BOKSTÄVER (`.toUpperCase()`).
   - Annars, returnera den vanliga hälsningen (t.ex. _"Hej Luna"_).
-- [ ] **Testa:** Anropa funktionen på tre olika sätt och logga resultaten:
+- [x] **Testa:** Anropa funktionen på tre olika sätt och logga resultaten:
   1.  Bara med namn.
   2.  Med namn och en egen hälsning (t.ex. "Tjena").
   3.  Med namn, egen hälsning och `true` för att skrika.
