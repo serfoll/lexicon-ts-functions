@@ -1,44 +1,47 @@
 # Workshop: Funktioner, Logik & Referense
 
 ## Steg 1: Syntax-omvandlingen (Oldschool till Modern)
+
 Vi börjar med att öva på den moderna syntaxen som är standard idag.
 
-- [ ] Skriv en namngiven funktion (med nyckelordet `function`) som heter `calculateArea`. Den ska ta `width` och `height` (numbers) och returnera arean.
-- [ ] Skriv sedan **om** exakt samma funktion till en modern **Arrow Function** (`const calculateArea = ...`) under den namngivna funktionen.
-- [ ] **Utmaning:** Prova att göra Arrow-funktionen så kort som möjligt. Kan du skriva den på en enda rad med **Implicit Return**? (Utan måsvingar `{ }` och `return`).
-- [ ] Anropa funktionen, spara svaret i en variabel och logga det i konsolen.
+- [x] Skriv en namngiven funktion (med nyckelordet `function`) som heter `calculateArea`. Den ska ta `width` och `height` (numbers) och returnera arean.
+- [x] Skriv sedan **om** exakt samma funktion till en modern **Arrow Function** (`const calculateArea = ...`) under den namngivna funktionen.
+- [x] **Utmaning:** Prova att göra Arrow-funktionen så kort som möjligt. Kan du skriva den på en enda rad med **Implicit Return**? (Utan måsvingar `{ }` och `return`).
+- [x] Anropa funktionen, spara svaret i en variabel och logga det i konsolen.
 
 ---
 
 ## Steg 2: Flexibla Parametrar
+
 Här ska vi bygga en funktion som är "snäll" mot användaren genom att ha valfria inställningar.
 
 - [ ] Skapa en funktion som heter `greetUser`.
 - [ ] Den ska ta tre parametrar:
-    1.  `name` (string, obligatorisk).
-    2.  `greeting` (string). Denna ska ha ett **Default Value** satt till `"Hej"`.
-    3.  `isShouting` (boolean). Denna ska vara **Optional** (`?`).
+  1.  `name` (string, obligatorisk).
+  2.  `greeting` (string). Denna ska ha ett **Default Value** satt till `"Hej"`.
+  3.  `isShouting` (boolean). Denna ska vara **Optional** (`?`).
 - [ ] **Logiken:**
-    * Funktionen ska returnera en sträng.
-    * Om `isShouting` är sant, returnera hela meningen med STORA BOKSTÄVER (`.toUpperCase()`).
-    * Annars, returnera den vanliga hälsningen (t.ex. *"Hej Luna"*).
+  - Funktionen ska returnera en sträng.
+  - Om `isShouting` är sant, returnera hela meningen med STORA BOKSTÄVER (`.toUpperCase()`).
+  - Annars, returnera den vanliga hälsningen (t.ex. _"Hej Luna"_).
 - [ ] **Testa:** Anropa funktionen på tre olika sätt och logga resultaten:
-    1.  Bara med namn.
-    2.  Med namn och en egen hälsning (t.ex. "Tjena").
-    3.  Med namn, egen hälsning och `true` för att skrika.
+  1.  Bara med namn.
+  2.  Med namn och en egen hälsning (t.ex. "Tjena").
+  3.  Med namn, egen hälsning och `true` för att skrika.
 
 ---
 
 ## Steg 3: Detektiven (Type Guards)
+
 Nu ska vi öva på att hantera data som kan vara av olika typer, precis som i ett API-svar.
 
 - [ ] Skapa en funktion som heter `countStrings`.
 - [ ] Den ska ta emot **en** parameter som heter `input`.
-- [ ] Typen på input ska vara en **Union Type**: `string | string[]` (alltså *antingen* en sträng *eller* en lista av strängar).
+- [ ] Typen på input ska vara en **Union Type**: `string | string[]` (alltså _antingen_ en sträng _eller_ en lista av strängar).
 - [ ] **Logiken:**
-    * Använd `Array.isArray(input)` för att kolla vad det är för data.
-    * Om det är en **Array**: Returnera antalet ord i listan (längden).
-    * Om det är en **Sträng**: Returnera siffran `1`.
+  - Använd `Array.isArray(input)` för att kolla vad det är för data.
+  - Om det är en **Array**: Returnera antalet ord i listan (längden).
+  - Om det är en **Sträng**: Returnera siffran `1`.
 - [ ] Testa att anropa med `["Äpple", "Banan"]` (Borde bli 2).
 - [ ] Testa att anropa med `"Ensam sträng"` (Borde bli 1).
 
@@ -47,35 +50,37 @@ Nu ska vi öva på att hantera data som kan vara av olika typer, precis som i et
 ---
 
 ## Steg 4: Minnes-experimentet (Objekt vs Primitiver)
-Här ska vi bevisa skillnaden på *Pass-by-Value* och *Pass-by-Reference*. Detta är viktigt för att inte råka skapa buggar i React senare.
+
+Här ska vi bevisa skillnaden på _Pass-by-Value_ och _Pass-by-Reference_. Detta är viktigt för att inte råka skapa buggar i React senare.
 
 - [ ] Skapa en variabel `price` (number) med värdet `100`.
 - [ ] Skapa ett objekt `product` med egenskapen `{ price: 100 }`.
 - [ ] Skriv en funktion som heter `applyDiscount(p, prod)`. Den ska ta emot ett nummer och ett produkt-objekt.
 - [ ] **Inuti funktionen:**
-    * Ändra numret `p` till `50`.
-    * Ändra objektet `prod.price` till `50`.
+  - Ändra numret `p` till `50`.
+  - Ändra objektet `prod.price` till `50`.
 - [ ] Anropa funktionen med dina variabler.
-- [ ] **Viktigt:** Logga både `price` och `product.price` *efter* anropet.
+- [ ] **Viktigt:** Logga både `price` och `product.price` _efter_ anropet.
 - [ ] Skriv en kommentar i koden: Vilken av dem ändrades "på riktigt" och varför?
 
 ---
 
-## Steg 5: Slutuppgift – "Varukorgen" 
+## Steg 5: Slutuppgift – "Varukorgen"
+
 Nu knyter vi ihop objekt, arrayer och funktioner.
 
 - [ ] Skapa en lista (Array) med objekt som simulerar en varukorg. Varje objekt i listan ska ha:
-    * `name` (string)
-    * `price` (number)
+  - `name` (string)
+  - `price` (number)
 - [ ] Skapa en funktion `calculateTotal`.
-    * Den ska ta emot varukorgen som parameter.
-    * Den ska loopa igenom listan och returnera totalsumman.
+  - Den ska ta emot varukorgen som parameter.
+  - Den ska loopa igenom listan och returnera totalsumman.
 - [ ] Skapa en funktion `addProduct`.
-    * Den ska ta emot varukorgen och en **ny** produkt (ett objekt med namn och pris).
-    * Den ska lägga till (`push`) den nya produkten i listan.
+  - Den ska ta emot varukorgen och en **ny** produkt (ett objekt med namn och pris).
+  - Den ska lägga till (`push`) den nya produkten i listan.
 - [ ] **Simulera ett köp:**
-    1.  Logga totalen (bör vara t.ex. 0 eller vad du startade med).
-    2.  Anropa `addProduct` för att lägga till en "Kaffe" för 40kr.
-    3.  Logga totalen igen för att se att den ökat.
+  1.  Logga totalen (bör vara t.ex. 0 eller vad du startade med).
+  2.  Anropa `addProduct` för att lägga till en "Kaffe" för 40kr.
+  3.  Logga totalen igen för att se att den ökat.
 
 ---
