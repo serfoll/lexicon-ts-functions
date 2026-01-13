@@ -53,15 +53,15 @@ Nu ska vi öva på att hantera data som kan vara av olika typer, precis som i et
 
 Här ska vi bevisa skillnaden på _Pass-by-Value_ och _Pass-by-Reference_. Detta är viktigt för att inte råka skapa buggar i React senare.
 
-- [ ] Skapa en variabel `price` (number) med värdet `100`.
-- [ ] Skapa ett objekt `product` med egenskapen `{ price: 100 }`.
-- [ ] Skriv en funktion som heter `applyDiscount(p, prod)`. Den ska ta emot ett nummer och ett produkt-objekt.
-- [ ] **Inuti funktionen:**
+- [x] Skapa en variabel `price` (number) med värdet `100`.
+- [x] Skapa ett objekt `product` med egenskapen `{ price: 100 }`.
+- [x] Skriv en funktion som heter `applyDiscount(p, prod)`. Den ska ta emot ett nummer och ett produkt-objekt.
+- [x] **Inuti funktionen:**
   - Ändra numret `p` till `50`.
   - Ändra objektet `prod.price` till `50`.
-- [ ] Anropa funktionen med dina variabler.
-- [ ] **Viktigt:** Logga både `price` och `product.price` _efter_ anropet.
-- [ ] Skriv en kommentar i koden: Vilken av dem ändrades "på riktigt" och varför?
+- [x] Anropa funktionen med dina variabler.
+- [x] **Viktigt:** Logga både `price` och `product.price` _efter_ anropet.
+- [x] Skriv en kommentar i koden: Vilken av dem ändrades "på riktigt" och varför?
 
 ---
 

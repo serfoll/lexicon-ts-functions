@@ -43,4 +43,17 @@ console.log(countStrings("Howdy"));
 
 // Steg 4: Minnes-experiment (Object vs Primitiver)
 
+const price: number = 100;
+const product: { price: number } = { price: 100 };
+
+const applyDiscount = (p: number, prod: { price: number }) => {
+  p = 50;
+  prod.price = 50;
+};
+
+applyDiscount(price, product);
+
+console.log(`price: ${price} | product.price: ${product.price}`);
+// `price` ändras inte för den är `pass by value`: funktionen jobbar med en kopia av variabeln medans product.price ändras för den är `pass by reference`. I JS/TS blir icke-primitiva typer såsom (object och array) pass by reference automatiskt.
+
 // Steg 5: Slutuppgift - "Varukorgen"
