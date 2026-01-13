@@ -57,3 +57,33 @@ console.log(`price: ${price} | product.price: ${product.price}`);
 // `price` ändras inte för den är `pass by value`: funktionen jobbar med en kopia av variabeln medans product.price ändras för den är `pass by reference`. I JS/TS blir icke-primitiva typer såsom (object och array) pass by reference automatiskt.
 
 // Steg 5: Slutuppgift - "Varukorgen"
+
+const cart: { name: string; price: number }[] = [
+  { name: `Kaffe Bröd`, price: 15 },
+  { name: `Grekisk sallad`, price: 70 },
+];
+
+const calculateTotal = (cart: { name: string; price: number }[]): number => {
+  let total: number = 0;
+
+  cart.forEach((item) => {
+    total += item.price;
+  });
+
+  return total;
+};
+
+const addProject = (
+  cart: { name: string; price: number }[],
+  item: { name: string; price: number },
+) => cart.push(item);
+
+// Köp genomförd
+
+let amountToPay = calculateTotal(cart);
+console.log(amountToPay);
+
+addProject(cart, { name: "Kaffe", price: 40 });
+
+amountToPay = calculateTotal(cart);
+console.log(amountToPay);
